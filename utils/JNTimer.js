@@ -19,6 +19,7 @@ function JNTimer(timeInterval, repeat, triggered){
     }
   }
   this.start = function(){
+    that.stop()
     interval = setInterval(function(){
       send()
     }, that.timeInterval)
